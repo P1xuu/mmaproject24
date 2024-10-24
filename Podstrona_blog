@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blog i Porady Treningowe - MMA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .article {
+            background-color: #fff;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .article h3 {
+            margin-top: 0;
+        }
+        .article p {
+            line-height: 1.6;
+        }
+        .read-more {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .read-more:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #222;
+            color: #fff;
+        }
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blog i Porady Treningowe - MMA</h1>
+    <p>Najlepsze techniki, poradniki i recenzje sprzętu do MMA</p>
+</header>
+
+<div class="container">
+
+    <section class="article">
+        <h2>Najnowsze artykuły</h2>
+        <article>
+            <h3>Techniki MMA: Najlepsze techniki parterowe dla początkujących</h3>
+            <p><strong>Data publikacji:</strong> 12 października 2024 r.</p>
+            <p>W tym artykule znajdziesz wprowadzenie do podstawowych technik grapplingu, które każdy początkujący zawodnik powinien opanować. Dowiedz się, jak efektywnie stosować duszenia, klucze na stawy i przejścia w parterze.</p>
+            <a href="#" class="read-more">Czytaj więcej</a>
+        </article>
+        <article>
+            <h3>Jak poprawić swoją wytrzymałość podczas walki?</h3>
+            <p><strong>Data publikacji:</strong> 5 października 2024 r.</p>
+            <p>Odkryj sprawdzone metody treningu cardio, które pomogą Ci utrzymać energię na każdym etapie walki. Dowiesz się, jakie ćwiczenia poprawią Twoją wytrzymałość tlenową i jak unikać zmęczenia w kluczowych momentach.</p>
+            <a href="#" class="read-more">Czytaj więcej</a>
+        </article>
+        <article>
+            <h3>Recenzja: Rękawice MMA X-Pro – Czy są warte swojej ceny?</h3>
+            <p><strong>Data publikacji:</strong> 25 września 2024 r.</p>
+            <p>Sprawdź naszą szczegółową recenzję rękawic MMA X-Pro – dowiedz się, jak sprawują się w treningu i na zawodach. Przeczytaj opinie ekspertów i zobacz, czy warto zainwestować w ten model.</p>
+            <a href="#" class="read-more">Czytaj więcej</a>
+        </article>
+        <article>
+            <h3>Nadchodzące walki MMA: Kalendarz wydarzeń 2024/2025</h3>
+            <p><strong>Data publikacji:</strong> 18 września 2024 r.</p>
+            <p>Nie przegap najważniejszych walk MMA! Zobacz, kiedy i gdzie odbędą się najbliższe wydarzenia oraz na co warto zwrócić uwagę podczas oglądania tych widowiskowych starć.</p>
+            <a href="#" class="read-more">Czytaj więcej</a>
+        </article>
+    </section>
+
+    <section>
+        <h2>Popularne kategorie</h2>
+        <ul>
+            <li>Techniki MMA</li>
+            <li>Trening siłowy i wytrzymałościowy</li>
+            <li>Recenzje sprzętu</li>
+            <li>Nadchodzące wydarzenia</li>
+        </ul>
+    </section>
+
+</div>
+
+<footer>
+    <p>Zapisz się do naszego newslettera, aby otrzymywać najnowsze porady treningowe oraz informacje o specjalnych ofertach sprzętu MMA!</p>
+    <p>Śledź nas w social media: <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">YouTube</a></p>
+</footer>
+
+</body>
+</html>
