@@ -73,11 +73,10 @@
         }
         footer {
             text-align: center;
-            padding: 01.5px;
+            padding: 1.5px;
             background-color: rgba(34, 34, 34, 0.7); /* Semi-transparent background */
             color: white;
         }
-    
         .slider-container {
             opacity: 0.9;
             width: 100%;
@@ -90,7 +89,7 @@
         .slider {
             display: flex;
             width: 10%;
-            animation: slide 10s linear infinite;
+            animation: slide 12s linear infinite;
         }
 
         .slider img {
@@ -100,9 +99,9 @@
 
         @keyframes slide {
             0% { transform: translateX(0); }
-            33% { transform: translateX(331.333%); }
-            66% { transform: translateX(661.666%); }
-            100% { transform: translateX(1000%); }
+            33% { transform: translateX(-33.333%); }
+            66% { transform: translateX(-66.666%); }
+            100% { transform: translateX(0); }
         }
     </style>
 </head>
@@ -124,12 +123,11 @@
                 <a href="accessories.html#suplementy">Suplementy</a>
             </div>
         </li>
-        <li><a href="index3.html" id="contactTab">Kontakt</a></li>
-        <li><a href="blog.html" id="blogTab">Blog</a></li>
+        <li><a href="#contact" id="contactTab">Kontakt</a></li>
     </ul>
 </nav>
+
 <div style="height: 650px">
-    
 </div>
 
 <div class="container">
@@ -140,6 +138,7 @@
 <footer>
     <p>Sklep MMA &copy; 2024</p>
 </footer>
+
 <div class="slider-container">
     <div class="slider">
         <img src="../backup_19.09.2024/ksw_logo.png" alt="Zdjęcie 1">
@@ -150,4 +149,3 @@
 
 </body>
 </html>
-

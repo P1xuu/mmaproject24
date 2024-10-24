@@ -104,6 +104,32 @@
             66% { transform: translateX(661.666%); }
             100% { transform: translateX(1000%); }
         }
+
+        /* Style for blog section */
+        .blog-section {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 10px;
+            border-radius: 8px;
+        }
+        .blog-section h3 {
+            text-align: center;
+            color: #333;
+        }
+        .blog-article {
+            margin: 15px 0;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        .blog-article:last-child {
+            border-bottom: none;
+        }
+        .blog-article h4 {
+            color: #444;
+        }
+        .blog-article p {
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -128,18 +154,31 @@
         <li><a href="blog.html" id="blogTab">Blog</a></li>
     </ul>
 </nav>
-<div style="height: 650px">
-    
+
+<div style="height: 500px">
+    <div class="container">
+        <h2>Witaj w naszym sklepie MMA!</h2>
+        <p>Znajdziesz tutaj najlepsze akcesoria do MMA.</p>
+    </div>
 </div>
 
-<div class="container">
-    <h2>Witaj w naszym sklepie MMA!</h2>
-    <p>Znajdziesz tutaj najlepsze akcesoria do MMA.</p>
+<!-- Blog Section Placeholder -->
+<div class="blog-section">
+    <h3>Najnowsze Porady na Blogu</h3>
+    <div class="blog-article">
+        <h4>Jak wybrać rękawice do MMA?</h4>
+        <p>Dowiedz się, jak dobrać rękawice odpowiednie do Twojego stylu walki...</p>
+    </div>
+    <div class="blog-article">
+        <h4>Top 5 Suplementów dla Zawodników MMA</h4>
+        <p>Odkryj, które suplementy mogą pomóc w osiągnięciu lepszej wydolności...</p>
+    </div>
 </div>
 
 <footer>
     <p>Sklep MMA &copy; 2024</p>
 </footer>
+
 <div class="slider-container">
     <div class="slider">
         <img src="../backup_19.09.2024/ksw_logo.png" alt="Zdjęcie 1">
@@ -150,4 +189,3 @@
 
 </body>
 </html>
-

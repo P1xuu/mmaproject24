@@ -10,14 +10,15 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-            background-image: url('./gif/walka.gif'); /* Tło dla strony głównej */
+            background-image: url('./1.gif'); /* Tło dla strony głównej */
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
         }
         #products {
+            opacity: 0.9;
             background-image: none; /* Usunięcie tła z nagraniem */
-            background-color: #ffffff; /* Możesz ustawić tło na biały lub inny kolor */
+            background-color:  white; /* Możesz ustawić tło na biały lub inny kolor */
             padding: 20px; /* Opcjonalnie, aby dodać padding dla estetyki */
         }
         header {
@@ -142,6 +143,32 @@
         .filter-button.active {
             background-color: #555;
         }
+        .slider-container {
+            opacity: 0.9;
+            width: 100%;
+            background-color: rgba(51, 51, 51, 0.7);
+            overflow: hidden;
+            padding: 10px 0;
+            position: relative;
+        }
+
+        .slider {
+            display: flex;
+            width: 10%;
+            animation: slide 12s linear infinite;
+        }
+
+        .slider img {
+            width: 33.333%;
+            height: auto;
+        }
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            33% { transform: translateX(331.333%); }
+            66% { transform: translateX(661.666%); }
+            100% { transform: translateX(1000%); }
+        }
+
     </style>
 </head>
 <body>
@@ -162,7 +189,8 @@
                 <a href="accessories.html#suplementy">Suplementy</a>
             </div>
         </li>
-        <li><a href="#contact" id="contactTab">Kontakt</a></li>
+        <li><a href="index3.html" id="contactTab">Kontakt</a></li>
+        <li><a href="blog.html" id="blogTab">Blog</a></li>
     </ul>
 </nav>
 
@@ -186,63 +214,63 @@
         </div>
         <h2>Najlepsze produkty MMA</h2>
         <div class="product" data-category="rekawice">
-            <img src="./img/rekawice mma.png" alt="Rękawice MMA">
+            <img src="rekawice.png" alt="Rękawice MMA">
             <h3>Rękawice MMA</h3>
             <p>Najwyższej jakości rękawice do treningów i walk.</p>
             <p>Cena: 199 PLN</p>
             <button onclick="addToCart(199)">Dodaj do koszyka</button>
         </div>
         <div class="product" data-category="ochraniacze">
-            <img src="./img/kask.png" alt="Kask ochronny MMA">
+            <img src="kask.png" alt="Kask ochronny MMA">
             <h3>Kask ochronny</h3>
             <p>Ochrona głowy podczas intensywnych sparingów.</p>
             <p>Cena: 299 PLN</p>
             <button onclick="addToCart(299)">Dodaj do koszyka</button>
         </div>
         <div class="product" data-category="ochraniacze">
-            <img src="./img/ochraniacz zeby.png" alt="Ochraniacz na zęby">
+            <img src="ochraniacz.png" alt="Ochraniacz na zęby">
             <h3>Ochraniacz na zęby</h3>
             <p>Profesjonalny ochraniacz na zęby dla zawodników.</p>
             <p>Cena: 49 PLN</p>
             <button onclick="addToCart(49)">Dodaj do koszyka</button>
         </div>
         <div class="product" data-category="ochraniacze">
-            <img src="./img/ochraniacz piszczele.png" alt="Ochraniacze na nogi">
+            <img src="ochraniacz nogi.png" alt="Ochraniacze na nogi">
             <h3>Ochrniacz na Piszczele</h3>
             <p>Profesjonalny ochraniacz na nogi dla zawodników.</p>
             <p>Cena: 199 PLN</p>
             <button onclick="addToCart(199)">Dodaj do koszyka</button>
         </div>
         <div class="product" data-category="ochraniacze">
-            <img src="./img/suspensor.png" alt="Ochraniacze na jaja">
+            <img src="klejnoty.png" alt="Ochraniacze na jaja">
             <h3>Ochrniacz na Klejnoty</h3>
             <p>Profesjonalny ochraniacz na Klejnoty dla zawodników.</p>
             <p>Cena: 199 PLN</p>
             <button onclick="addToCart(199)">Dodaj do koszyka</button>
         </div>
         <div class="product" data-category="ciuchy">
-            <img src="./img/rashguard krotki.png" alt="Rashguard krotki">
+            <img src="rashguard krotki.png" alt="Rashguard krotki">
             <h3>Rashguard krotki</h3>
             <p>Profesjonalny Ubranie na trening </p>
             <p>Cena: 199 PLN</p>
             <button onclick="addToCart(199)">Dodaj do koszyka</button>
         </div>
         <div class="product" data-category="ciuchy">
-            <img src="./img/venum.png" alt="Spodenki">
+            <img src="spodenki.png" alt="Spodenki">
             <h3>Spodenki MMA</h3>
             <p>Profesjonalny Ubranie na trening </p>
             <p>Cena: 199 PLN</p>
             <button onclick="addToCart(199)">Dodaj do koszyka</button>
         </div>
         <div class="product" data-category="suplementy">
-            <img src="./img/ciruline.png" alt="suplementy">
+            <img src="citruline.png" alt="suplementy">
             <h3>Citruline</h3>
             <p>Profesjonalny Suplement na regeneracje mięśni </p>
             <p>Cena: 199 PLN</p>
             <button onclick="addToCart(199)">Dodaj do koszyka</button>
         </div>
         <div class="product" data-category="suplementy">
-            <img src="./img/ciruline.png" alt="suplementy">
+            <img src="kreatyna.png" alt="suplementy">
             <h3>Creatyna</h3>
             <p>Profesjonalny Suplement na nawodnienie mięśni </p>
             <p>Cena: 199 PLN</p>
@@ -283,6 +311,13 @@
     // Domyślnie pokazujemy wszystkie produkty
     filterProducts('all');
 </script>
+<div class="slider-container">
+    <div class="slider">
+        <img src="../backup_19.09.2024/ksw_logo.png" alt="Zdjęcie 1">
+        <img src="../backup_19.09.2024/beltor_logo.png" alt="Zdjęcie 2">
+        <img src="../backup_19.09.2024/fairtex_logo.png" alt="Zdjęcie 3">
+    </div>
+</div>
 
 </body>
 </html>

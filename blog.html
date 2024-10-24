@@ -14,7 +14,7 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            height: 965px;
+            height: 100%;
         }
         header {
             background-color: rgba(34, 34, 34, 0.7); /* Semi-transparent background */
@@ -22,6 +22,8 @@
             padding: 10px;
             text-align: center;
         }
+    
+            
         nav {
             position: relative;
         }
@@ -104,6 +106,41 @@
             66% { transform: translateX(661.666%); }
             100% { transform: translateX(1000%); }
         }
+
+        /* Style for blog section */
+        .blog-section {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 10px;
+            border-radius: 8px;
+        }
+        .blog-section h3 {
+            text-align: center;
+            color: #333;
+        }
+        .blog-article {
+            margin: 15px 0;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        .blog-article:last-child {
+            border-bottom: none;
+        }
+        .blog-article h4 {
+            color: #444;
+        }
+        .blog-article p {
+            color: #666;
+        }
+        /* Style for white text in welcome section */
+        .container h2, .container p {
+            color: white;
+        }
+    
+        /* Style for white text in welcome section */
+        .container1 h2, .container1 p {
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -128,18 +165,52 @@
         <li><a href="blog.html" id="blogTab">Blog</a></li>
     </ul>
 </nav>
-<div style="height: 650px">
-    
+
+
+
+<!-- Blog Section Placeholder -->
+
 </div>
 
-<div class="container">
-    <h2>Witaj w naszym sklepie MMA!</h2>
-    <p>Znajdziesz tutaj najlepsze akcesoria do MMA.</p>
+    <section class="blog-section">
+        <h2>Najnowsze artykuły</h2>
+        <article>
+            <h3>Techniki MMA: Najlepsze techniki parterowe dla początkujących</h3>
+            <p><strong>Data publikacji:</strong> 12 października 2024 r.</p>
+            <p>W tym artykule znajdziesz wprowadzenie do podstawowych technik grapplingu, które każdy początkujący zawodnik powinien opanować. Dowiedz się, jak efektywnie stosować duszenia, klucze na stawy i przejścia w parterze.</p>
+            <a href="#" class="read-more">Czytaj więcej</a>
+        </article>
+        <article>
+            <div class="blog-article"></div>
+            <h3>Jak poprawić swoją wytrzymałość podczas walki?</h3>
+            <p><strong>Data publikacji:</strong> 5 października 2024 r.</p>
+            <p>Odkryj sprawdzone metody treningu cardio, które pomogą Ci utrzymać energię na każdym etapie walki. Dowiesz się, jakie ćwiczenia poprawią Twoją wytrzymałość tlenową i jak unikać zmęczenia w kluczowych momentach.</p>
+            <a href="#" class="read-more">Czytaj więcej</a>
+        </article>
+        <article>
+            <div class="blog-article">
+            <h3>Recenzja: Rękawice MMA X-Pro – Czy są warte swojej ceny?</h3>
+            <p><strong>Data publikacji:</strong> 25 września 2024 r.</p>
+            <p>Sprawdź naszą szczegółową recenzję rękawic MMA X-Pro – dowiedz się, jak sprawują się w treningu i na zawodach. Przeczytaj opinie ekspertów i zobacz, czy warto zainwestować w ten model.</p>
+            <a href="#" class="read-more">Czytaj więcej</a>
+        </article>
+        <article>
+            <div class="blog-article">
+            <h3>Nadchodzące walki MMA: Kalendarz wydarzeń 2024/2025</h3>
+            <p><strong>Data publikacji:</strong> 18 września 2024 r.</p>
+            <p>Nie przegap najważniejszych walk MMA! Zobacz, kiedy i gdzie odbędą się najbliższe wydarzenia oraz na co warto zwrócić uwagę podczas oglądania tych widowiskowych starć.</p>
+            <a href="#" class="read-more">Czytaj więcej</a>
+        </article>
+    </section>
+</div>
+
+
 </div>
 
 <footer>
     <p>Sklep MMA &copy; 2024</p>
 </footer>
+
 <div class="slider-container">
     <div class="slider">
         <img src="../backup_19.09.2024/ksw_logo.png" alt="Zdjęcie 1">
@@ -150,4 +221,3 @@
 
 </body>
 </html>
-
