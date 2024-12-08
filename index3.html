@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sklep MMA - Strona Główna</title>
     <style>
-        body {
+         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -14,7 +14,7 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            height: 965px;
+            height: 900px;
         }
         header {
             background-color: rgba(34, 34, 34, 0.7); /* Semi-transparent background */
@@ -22,6 +22,8 @@
             padding: 10px;
             text-align: center;
         }
+    
+            
         nav {
             position: relative;
         }
@@ -104,6 +106,70 @@
             66% { transform: translateX(661.666%); }
             100% { transform: translateX(1000%); }
         }
+/* Styles for categories under the slider */
+        .categories {
+            background-color: rgba(34, 34, 34, 0.7);
+            color: white;
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .category {
+            text-align: left;
+            width: 23%;
+        }
+        .category h3 {
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        .category ul {
+            list-style: none;
+            padding: 0;
+        }
+        .category ul li {
+            margin-bottom: 5px;
+        }
+        .category ul li a {
+            color: #ccc;
+            text-decoration: none;
+        }
+        .category ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Smaller table styles */
+        .table-container {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 20px;
+            border-radius: 8px;
+            max-width: 500px; /* Zmniejszamy szerokość */
+            margin: auto; /* Wyśrodkowanie tabeli */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #555;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        input[type="text"], input[type="submit"] {
+            width: 100%;
+            padding: 8px;
+            margin: 4px 0;
+        }
     </style>
 </head>
 <body>
@@ -128,26 +194,67 @@
         <li><a href="blog.html" id="blogTab">Blog</a></li>
     </ul>
 </nav>
-<div style="height: 650px">
-    
+
+
+<!-- Tabela do wypełnienia -->
+<div class="table-container">
+    <h2>Formularz zamówienia</h2>
+    <form action="submit_order.php" method="POST">
+        <table>
+            <tr>
+                <th>Imię i nazwisko</th>
+                <td><input type="text" name="fullname" required></td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td><input type="text" name="email" required></td>
+            </tr>
+            <tr>
+                <th>Telefon</th>
+                <td><input type="text" name="phone" required></td>
+            </tr>
+            <tr>
+                <th>Adres</th>
+                <td><input type="text" name="address" required></td>
+            </tr>
+        </table>
+        <input type="submit" value="Wyślij zamówienie">
+    </form>
 </div>
 
-<div class="container">
-    <h2>Witaj w naszym sklepie MMA!</h2>
-    <p>Znajdziesz tutaj najlepsze akcesoria do MMA.</p>
-</div>
-
-<footer>
-    <p>Sklep MMA &copy; 2024</p>
-</footer>
-<div class="slider-container">
-    <div class="slider">
-        <img src="../backup_19.09.2024/ksw_logo.png" alt="Zdjęcie 1">
-        <img src="../backup_19.09.2024/beltor_logo.png" alt="Zdjęcie 2">
-        <img src="../backup_19.09.2024/fairtex_logo.png" alt="Zdjęcie 3">
+<!-- Slider -->
+<div class="categories">
+    <div class="category">
+        <h3>MMA Shop</h3>
+        <ul>
+            <li>Email: kontakt@mmashop.pl</li>
+            <li>Telefon: +48 123 456 789</li>
+            <li>Adres: ul. Sportowa 1, 00-100 Warszawa</li>
+        </ul>
     </div>
-</div>
+    <div class="category">
+        <h3>Współpraca</h3>
+        <ul>
+            <li><a href="#">Venum</a></li>
+            <li><a href="#">Fairtex</a></li>
+            <li><a href="#">Everlast</a></li>
+        </ul>
+    </div>
+    <div class="category">
+        <h3>Informacje o sklepie</h3>
+        <ul>
+            <li><a href="#">Regulamin</a></li>
+            <li><a href="#">Koszty wysyłki</a></li>
+            <li><a href="#">Wysyłka i zwroty</a></li>
+        </ul>
+    </div>
 
-</body>
-</html>
 
+<!-- Kategoria: O nas, współpraca, informacje, zakupy -->
+
+    <div class="category">
+        <h3>Zakupy</h3>
+        <ul>
+            <li><a href="koszyk.html">Koszyk</a></li>
+        </body>
+        </html>
